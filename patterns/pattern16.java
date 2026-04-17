@@ -2,24 +2,25 @@ package patterns;
 
 import java.util.Scanner;
 
-public class pattern14 {
+public class pattern16 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        int n= scanner.nextInt();
+        char  ch='A';
         for(int i=1;i<=n;i++){
-            for(char ch='A';ch<'A'+i;ch++){
+            for(int j=1;j<=i;j++){
                 System.out.print(ch);
             }
             System.out.println();
-        }    
+            ch++;
+        }
         scanner.close();
     }
-
 }
 
 // Output-
 // A
-// AB
-// ABC
-// ABCD
-// ABCDE
+// BB
+// CCC
+// DDDD
+// EEEEE

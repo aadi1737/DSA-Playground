@@ -4,30 +4,31 @@ import java.util.Scanner;
 
 public class pattern12 {
     public static void main(String[] args) {
-        Scanner scanner =  new Scanner(System.in);
-        int n=scanner.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
         // int n=5;
         int t;
-        for(int i=1;i<=n;i++){
-            for(t=1;t<=i;t++){
+        for (int i = 1; i <= n; i++) {
+            for (t = 1; t <= i; t++) {
                 System.out.print(t);
             }
 
-            for(int j=1;j<=(n*2-i-t)+1;j++){
+            for (int j = 1; j <= (n * 2 - i - t) + 1; j++) {
                 System.out.print(" ");
             }
 
-            for(int j=i;j>0;j--){
+            for (int j = i; j > 0; j--) {
                 System.out.print(j);
             }
             System.out.println();
         }
+        scanner.close();
     }
 }
 // Output-
-// 1          1
-// 12        21
-// 123      321
-// 1234    4321
-// 12345  54321
+// 1 1
+// 12 21
+// 123 321
+// 1234 4321
+// 12345 54321
 // 123456654321
