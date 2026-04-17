@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class pattern12 {
     public static void main(String[] args) {
         Scanner scanner =  new Scanner(System.in);
-        // int n=scanner.nextInt();
-        int n=4;
+        int n=scanner.nextInt();
+        // int n=5;
         int t;
         for(int i=1;i<=n;i++){
             for(t=1;t<=i;t++){
@@ -24,3 +24,10 @@ public class pattern12 {
         }
     }
 }
+// Output-
+// 1          1
+// 12        21
+// 123      321
+// 1234    4321
+// 12345  54321
+// 123456654321
