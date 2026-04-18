@@ -13,6 +13,7 @@ public class pattern18 {
             }
             System.out.println();
         }
+        scanner.close();
     }
 }
 // Output-
