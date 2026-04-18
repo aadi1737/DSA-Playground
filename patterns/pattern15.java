@@ -12,6 +12,7 @@ public class pattern15 {
             }
             System.out.println();
         }
+        scanner.close();
     }
 }
 // Output-
